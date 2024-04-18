@@ -1,0 +1,28 @@
+﻿<Window x:Class="Toplivo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Toplivo"
+        mc:Ignorable="d"
+        Title="Главное окно" Height="600" Width="800">
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="В хранилище осталось:" Name="TbOst"/>
+            <TextBlock Text="Литров топлива осталось:" Name="TbLitr"/>
+            <TextBlock Text="Масса топлива:" Name="TbMassa"/>
+            <TextBlock Text="Введите количество топлива (л), необходимое для заправки: " />
+            <TextBox Name="TbToplivo" Height="45"/>
+            <Button Click="Button_Click" Height="45" Content="Заправить машину"/>
+            <TextBlock Text="Введите количество топлива (л), необходимое для добавления в хранилище: "/>
+            <TextBox Height="45" Name="toplivoAm"/>
+            <Button Click="Button_ClickAdd" Height="45" Content="Добавить топливо"/>
+            
+            
+            <TextBlock Text="изменить объем топлива в хранилище: "/>
+            <TextBox Height="45" Name="toplObyem"/>
+            <Button Click="Button_ClickChangeOb" Height="45" Content="Изменить объем"/>
+
+        </StackPanel>
+    </Grid>
+</Window>
